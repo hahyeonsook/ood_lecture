@@ -4,9 +4,17 @@
         <servlet-name>UserModeTest</servlet-name>
         <servlet-class>cse.maven_ood.ch01.user_mode_test.UserModeTest</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>DownloadServlet</servlet-name>
+        <servlet-class>cse.maven_ood.ch07.control.DownloadServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>UserModeTest</servlet-name>
         <url-pattern>/ch01/index.jsp</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DownloadServlet</servlet-name>
+        <url-pattern>/DownloadServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
